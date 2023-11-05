@@ -72,7 +72,11 @@
     padding-bottom: .25rem;
     margin-top: -1rem;
    }
-
+  @media screen and (min-width: 768px) {
+    .topParagraph {
+      font-size:2.75rem;
+    }
+  }
 
 
 
@@ -86,7 +90,7 @@ body {
   justify-content: center;
   align-items: center;
   width: auto;
-  min-height: 99vh; 
+  min-height: 100vh; 
   margin: 3px;
   outline: 4px double var(--f9LIGHTDUCKCHEEKS); 
   border: 10px solid var(--f1DARKDUCKHEAD);
@@ -125,8 +129,8 @@ body {
 
 
 .cube {
-  position: fixed;
-  top: 2rem;
+  position: relative;
+  
   width: 150px;
   height: 150px;
   transform-style: preserve-3d;
@@ -147,7 +151,14 @@ transform:rotateX(-15deg) rotateY(0deg);
   } 
     
     
-
+.outerCubeDiv {
+   position: relative;
+   justify-content: center;
+   align-items: center;
+   margin-top: 8rem;
+   width: fit-content;
+   padding: 5rem;
+}
 
  
 .cube div {
